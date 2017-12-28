@@ -138,14 +138,21 @@ In this section, you enable Azure AD single sign-on in the Azure portal and conf
     ![Single sign-on section](./media/active-directory-saas-zoom-tutorial/IC784701.png "Single sign-on")
    
     a. In the **Sign-in page URL** textbox, paste the value of **SAML Single Sign-On Service URL** which you have copied from Azure portal.
-   
-    b. In the **Sign-out page URL** textbox, paste the value of **Sign-Out URL** which you have copied from Azure portal.
      
-    c. Open your base-64 encoded certificate in notepad, copy the content of it into your clipboard, and then paste it to the **Identity provider certificate** textbox.
+    b. Open your base-64 encoded certificate in notepad, copy the content of it into your clipboard, and then paste it to the **Identity provider certificate** textbox.
 
-    d. In the **Issuer** textbox, paste the value of **SAML Entity ID** which you have copied from Azure portal. 
-
-    e. Click **Save**.
+    c. In the **Issuer** textbox, paste the value of **SAML Entity ID** which you have copied from Azure portal. 
+    
+ 11. In Azure, click **More Services**, on the left. 
+ 
+ 12. Search for and click **App registrations**.
+ 
+ 13. Click **Endpoints**. 
+ 
+ 14. Copy the **SAML-P Sign-out Endpoint** and paste it into **Sign-out page URL** in Zoom.
+ 
+ 15. In Zoom, click **Save Changes**.
+ 
 
 > [!TIP]
 > You can now read a concise version of these instructions inside the [Azure portal](https://portal.azure.com), while you are setting up the app!  After adding this app from the **Active Directory > Enterprise Applications** section, simply click the **Single Sign-On** tab and access the embedded documentation through the **Configuration** section at the bottom. You can read more about the embedded documentation feature here: [Azure AD embedded documentation]( https://go.microsoft.com/fwlink/?linkid=845985)
